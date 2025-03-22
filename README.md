@@ -82,3 +82,20 @@ if "pizza" not in healthy:
     backpack.remove("pizza")
 print(backpack)
 ```
+
+- `Removing from lists using comprehension`
+  We´re only going to remove items that are not find in another list. We´re gonna keep an item, an item that comes from backpack, but only if item is in healthy.
+
+```py
+healthy = ['kale chips', 'broccoli']
+backpack = ['pizza', 'frozen custard', 'apple crips', 'kale chips']
+
+print(id(backpack))
+backpack = [item for item in backpack if item in healthy]
+
+print(id(backpack))
+print(backpack)
+
+# Slice a list and replace all the elements in a list, without actually creating a new list.
+backpack[:] = [item for item in backpack if item in healthy]
+```
