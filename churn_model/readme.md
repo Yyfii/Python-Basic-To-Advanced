@@ -20,3 +20,5 @@ On VSCODE, go to extension and search for Jupyter, then install it.
 # activate the virtual environment (in the cmd)
 > venv\Scripts\activate
 ```
+
+2. Now, you can follow along in the [notebook](./script.ipynb)
